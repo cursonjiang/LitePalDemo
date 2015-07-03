@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <!-- 数据库名-->
+    <dbname value="Curson" />
+
+    <!-- 数据库版本号   升级表的时候,  把version的号码  +1 就行-->
+    <version value="4" />
+
+    <!-- 映射模型   每增加一个表, 需要在这里添加-->
+    <!-- 删除表的时候, 在这里把不想要的表删掉就可以-->
+    <list>
+        <!-- 新闻表-->
+        <mapping class="com.cursonjiang.litepaldemo.model.News" />
+
+        <!-- 评论表-->
+        <mapping class="com.cursonjiang.litepaldemo.model.Comment" />
+
+        <mapping class="com.cursonjiang.litepaldemo.model.Introduction" />
+        <mapping class="com.cursonjiang.litepaldemo.model.Category" />
+    </list>
+
+</litepal>
